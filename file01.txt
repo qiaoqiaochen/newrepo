@@ -1,0 +1,22 @@
+
+Git 项目管理工具
+
+工作区——>暂存区	git add .
+暂存区——>仓库	git commit -m "Message"
+查看状态		git status
+查看提交记录	git log; git-log
+版本回退		git reset --hard
+查看分支		git branch
+创建分支		git branch <new branch>
+切换分支		git checkout <branch Name>
+创建分支并切换	git checkout -b <Branch name>
+分支合并		git merge <Branch name> (要先切换到当前分支)
+删除分支		git branch -d 
+
+配置SSH公钥
+生成SSH公钥：
+ssh-keygen -t rsa
+获取SSH公钥：
+cat ~/.ssh/id_rsa.pub
+验证是否配置成功：
+ssh -T 
